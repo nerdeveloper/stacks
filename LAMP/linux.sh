@@ -3,7 +3,7 @@
 RED='\033[0;31m'
 BLUE='\033[40;38;5;82m'
 PURPLE='\033[0;35m'
-BOLD='$(tput bold)'
+BOLD='tput bold'
 
 
 echo "***** Installing Apache, MySQL and PHP for Debiana and Ubuntu OS ********"

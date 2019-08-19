@@ -14,15 +14,15 @@ sleep 3
 sudo apt-get update
 
 
-echo -e  "Checking for Apache Server"
+echo -e  "Checking for Nginx Server"
 sleep 2
-if [ $(find /etc/init.d -name apache2) ]
+if [ $(find /etc/init.d -name nginx) ]
 then
-    echo -e " ${RED} You have apache2 server installed! \e[0m"
+    echo -e " ${RED} You have nginx server installed! \e[0m"
 else
-    echo -e " ${BLUE} Installing Apache2 Server"
+    echo -e " ${BLUE} Installing Nginx Server"
     sleep 2
-    sudo apt-get install apache2 -y
+    sudo apt-get install nginx -y
     echo -e  " ${BLUE} Apache server has been installed! \e[0m"
     
 fi
@@ -48,7 +48,7 @@ then
 else
     echo -e " ${BLUE} Installing PHP"
     sleep 2
-    sudo apt install php libapache2-mod-php php-mysql -y 
+    sudo apt install php libapache2-mod-php php-mysql -y
     echo -e  " ${BLUE} PHP has been installed! \e[0m "
     
 fi

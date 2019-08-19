@@ -42,13 +42,13 @@ fi
 
 echo  "Checking for PHP"
 sleep 2
-if [ $(sudo find /etc/php -name php) ]
+if [ $(sudo find /etc/alternatives/ -name php) ]
 then
     echo -e " ${RED} You have PHP installed! \e[0m"
 else
     echo -e " ${BLUE} Installing PHP"
     sleep 2
-    sudo apt install php libapache2-mod-php php-mysql
+    sudo apt install php libapache2-mod-php php-mysql -y 
     echo -e  " ${BLUE} PHP has been installed!"
     
 fi

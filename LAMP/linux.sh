@@ -17,12 +17,12 @@ echo -e  "Checking for Apache Server"
 sleep 2
 if [ $(find /etc/init.d -name apache2) ]
 then
-    echo "${RED} You have apache2 server installed!"
+    echo "${RED}You have apache2 server installed!"
 else
-    echo -e "${BLUE} Installing Apache2 Server"
+    echo -e "${BLUE}Installing Apache2 Server"
     sleep 2
     sudo apt-get update && sudo apt-get install apache2 -y
-    echo -e  "${BLUE} Apache server has been installed!"
+    echo -e  "${BLUE}Apache server has been installed!"
     
 fi
 
@@ -30,12 +30,12 @@ echo  "Checking for MySQL Server"
 sleep 2
 if [ $(find /etc/init.d -name mysql) ]
 then
-    echo "  ${RED}You have MySQL server installed!"
+    echo "${RED}You have MySQL server installed!"
 else
-    echo -e "  ${BLUE} Installing MySQL Server"
+    echo -e "${BLUE} Installing MySQL Server"
     sleep 2
     sudo apt install mysql-server -y
-    echo -e  " ${BLUE}MySQL server has been installed!"
+    echo -e  "${BLUE}MySQL server has been installed!"
     
 fi
 

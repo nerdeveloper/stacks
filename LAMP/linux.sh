@@ -23,7 +23,7 @@ else
     echo -e " ${BLUE} Installing Apache2 Server"
     sleep 2
     sudo apt-get update && sudo apt-get install apache2 -y
-    echo -e  " ${BLUE} Apache server has been installed!"
+    echo -e  " ${BLUE} Apache server has been installed! \e[0m"
     
 fi
 
@@ -36,7 +36,7 @@ else
     echo -e " ${BLUE} Installing MySQL Server"
     sleep 2
     sudo apt install mysql-server -y
-    echo -e  " ${BLUE} MySQL server has been installed!"
+    echo -e  " ${BLUE} MySQL server has been installed! \e[0m"
     
 fi
 
@@ -49,12 +49,12 @@ else
     echo -e " ${BLUE} Installing PHP"
     sleep 2
     sudo apt install php libapache2-mod-php php-mysql -y 
-    echo -e  " ${BLUE} PHP has been installed!"
+    echo -e  " ${BLUE} PHP has been installed! \e[0m "
     
 fi
 
 echo Done
-echo -e " ${PURPLE} Tweet me @_nerdeveloper"
+echo -e " ${BLUE} Tweet me @_nerdeveloper"
 
 
 

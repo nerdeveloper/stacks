@@ -31,12 +31,12 @@ echo  "Checking for MySQL Server"
 sleep 2
 if [ $(find /etc/init.d -name mysql) ]
 then
-    echo "${RED} You have MySQL server installed! \e[0m"
+    echo " ${RED} You have MySQL server installed! \e[0m"
 else
-    echo -e "${BLUE} Installing MySQL Server"
+    echo -e " ${BLUE} Installing MySQL Server"
     sleep 2
     sudo apt install mysql-server -y
-    echo -e  "${BLUE} MySQL server has been installed!"
+    echo -e  " ${BLUE} MySQL server has been installed!"
     
 fi
 
@@ -46,10 +46,10 @@ if [ $(sudo find /etc/php -name php) ]
 then
     echo " ${RED} You have PHP installed! \e[0m"
 else
-    echo -e "${BLUE} Installing PHP"
+    echo -e " ${BLUE} Installing PHP"
     sleep 2
     sudo apt install php libapache2-mod-php php-mysql
-    echo -e  "${BLUE} PHP has been installed!"
+    echo -e  " ${BLUE} PHP has been installed!"
     
 fi
 

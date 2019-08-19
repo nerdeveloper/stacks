@@ -3,7 +3,7 @@
 RED='\033[0;31m'
 BLUE='\033[\0;34m\n'
 PURPLE='\033[0;35m'
-bold=$(tput bold)
+BOLD=$(tput bold)
 
 echo "***** Installing Apache, MySQL and PHP for Debiana and Ubuntu OS ********"
 sleep 1
@@ -16,12 +16,12 @@ echo  "Checking for Apache Server"
 sleep 2
 if [ $(find /etc/init.d -name apache2) ]
 then
-    echo "${RED} ${bold}You have apache2 server installed!"
+    echo "${BOLD} ${RED} You have apache2 server installed!"
 else
-    echo -e "${BLUE} ${bold}Installing Apache2 Server"
+    echo -e "${BOLD} ${BLUE} Installing Apache2 Server"
     sleep 2
     sudo apt-get update && sudo apt-get install apache2 -y
-    echo -e  "${BLUE} ${bold}Apache server has been installed!"
+    echo -e  "${BOLD} ${BLUE} Apache server has been installed!"
     
 fi
 
@@ -29,12 +29,12 @@ echo  "Checking for MySQL Server"
 sleep 2
 if [ $(find /etc/init.d -name mysql) ]
 then
-    echo "${RED} ${bold}You have MySQL server installed!"
+    echo " ${BOLD} ${RED}You have MySQL server installed!"
 else
-    echo -e "${BLUE} ${bold}Installing MySQL Server"
+    echo -e " ${BOLD} ${BLUE} Installing MySQL Server"
     sleep 2
     sudo apt install mysql-server -y 
-    echo -e  "${BLUE} ${bold}MySQL server has been installed!"
+    echo -e  "${BLUE} ${BLUE}MySQL server has been installed!"
     
 fi
 
@@ -42,12 +42,12 @@ echo  "Checking for PHP"
 sleep 2
 if [ $(sudo find /etc/php -name php) ]
 then
-    echo "${RED} ${bold}You have PHP installed!"
+    echo " ${BOLD} ${RED}You have PHP installed!"
 else
-    echo -e "${BLUE} ${bold}Installing PHP"
+    echo -e " ${BOLD} ${BLUE}Installing PHP"
     sleep 2
     sudo apt install php libapache2-mod-php php-mysql
-    echo -e  "${BLUE} ${bold}PHP has been installed!"
+    echo -e  "${BOLD} ${BLUE} PHP has been installed!"
     
 fi
 

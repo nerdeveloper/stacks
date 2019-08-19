@@ -15,9 +15,9 @@ echo  "Checking for Apache Server"
 sleep 2
 if [ $(find /etc/init.d -name apache2) ]
 then
-    echo "${BLUE} You have apache2 server installed!"
+    echo "${RED} You have apache2 server installed!"
 else
-    echo -e "${RED}Installing Apache2 Server"
+    echo -e "${BLUE}Installing Apache2 Server"
     sleep 2
     sudo apt-get update && sudo apt-get install apache2 -y
     echo -e  "${BLUE}Apache server has been installed!"
@@ -39,7 +39,7 @@ fi
 
 echo  "Checking for PHP"
 sleep 2
-if [ $(find /etc -name php) ]
+if [ $(sudo find /etc/php -name php) ]
 then
     echo "${RED} You have PHP installed!"
 else

@@ -9,33 +9,28 @@ PURPLE='\033[0;35m'
 echo "***** Installing Apache, MySQL and PHP for Debiana and Ubuntu OS ********"
 sleep 2
 
-echo "***** Updating services ****"
-sleep 3
-sudo apt-get update
-
-
-echo -e  "Checking for Nginx Server"
+echo -e  "Checking Nginx Server"
 sleep 2
-if [ $(find /etc/init.d -name nginx) ]
+if [ $(find /etc/ -name nginx) ]
 then
     echo -e " ${RED} You have nginx server installed! \e[0m"
 else
     echo -e " ${BLUE} Installing Nginx Server"
     sleep 2
-    sudo apt-get install nginx -y
-    echo -e  " ${BLUE} Nginx server has been installed! \e[0m"
+    sudo brew install nginx && sudo brew services start nginx
+    echo -e  " ${BLUE} Nginx Server has been installed! \e[0m"
     
 fi
 
 echo  "Checking for MySQL Server"
 sleep 2
-if [ $(find /etc/init.d -name mysql) ]
+if [ $(find /etc/ -name mariadb) ]
 then
     echo -e  " ${RED} You have MySQL server installed! \e[0m"
 else
     echo -e " ${BLUE} Installing MySQL Server"
     sleep 2
-    sudo apt install mysql-server -y
+    sudo brew install mariadb && sudo brew services start mariadb
     echo -e  " ${BLUE} MySQL server has been installed! \e[0m"
     
 fi
@@ -48,7 +43,7 @@ then
 else
     echo -e " ${BLUE} Installing PHP"
     sleep 2
-    sudo apt install php libapache2-mod-php php-mysql -y
+    sudo brew install php && sudo brew services start php
     echo -e  " ${BLUE} PHP has been installed! \e[0m "
     
 fi

@@ -4,7 +4,7 @@ RED='\033[0;31m'
 BLUE='\033[40;38;5;82m'
 PURPLE='\033[0;35m'
 NODEJS_VERSION='10.x'
-MONGODB_VERSION='3.6'
+MONGODB_VERSION='4.0'
 
 
 
@@ -52,7 +52,7 @@ then
 else
     echo -e " ${BLUE} Installing MongoDB "
     sleep 2
-    sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10 && \
+    wget -qO - https://www.mongodb.org/static/pgp/server-${MONGODB_VERSION}.asc | sudo apt-key add - && \
     . /etc/os-release &&  echo "$UBUNTU_CODENAME"
     echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu $UBUNTU_CODENAME/mongodb-org/${MONGODB_VERSION} multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-${MONGODB_VERSION}.list && \
     sudo apt-get update && \

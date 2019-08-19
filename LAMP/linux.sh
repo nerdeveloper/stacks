@@ -31,7 +31,7 @@ echo  "Checking for MySQL Server"
 sleep 2
 if [ $(find /etc/init.d -name mysql) ]
 then
-    echo " ${RED} You have MySQL server installed! \e[0m"
+    echo -e  " ${RED} You have MySQL server installed! \e[0m"
 else
     echo -e " ${BLUE} Installing MySQL Server"
     sleep 2
@@ -44,7 +44,7 @@ echo  "Checking for PHP"
 sleep 2
 if [ $(sudo find /etc/php -name php) ]
 then
-    echo " ${RED} You have PHP installed! \e[0m"
+    echo -e " ${RED} You have PHP installed! \e[0m"
 else
     echo -e " ${BLUE} Installing PHP"
     sleep 2
@@ -54,7 +54,7 @@ else
 fi
 
 echo Done
-echo -e "${PURPLE} Tweet me @_nerdeveloper"
+echo -e " ${PURPLE} Tweet me @_nerdeveloper"
 
 
 

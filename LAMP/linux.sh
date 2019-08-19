@@ -1,18 +1,19 @@
 #!/bin/bash
 
 RED='\033[0;31m'
-BLUE='\033[\0;34m'
+BLUE='\033[40;38;5;82m'
 PURPLE='\033[0;35m'
-BOLD=$(tput bold)
+BOLD='$(tput bold)'
+
 
 echo "***** Installing Apache, MySQL and PHP for Debiana and Ubuntu OS ********"
-sleep 1
+sleep 2
 
 echo "***** Updating services ****"
 sudo apt-get update
 sleep 3
 
-echo  "Checking for Apache Server"
+echo -e  "Checking for Apache Server"
 sleep 2
 if [ $(find /etc/init.d -name apache2) ]
 then

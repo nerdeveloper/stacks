@@ -1,7 +1,7 @@
 #!/bin/bash
 
 RED='\033[0;31m'
-BLUE='\033[\0;34m\n'
+BLUE='\033[\0;34m'
 PURPLE='\033[0;35m'
 BOLD=$(tput bold)
 
@@ -33,7 +33,7 @@ then
 else
     echo -e " ${BOLD} ${BLUE} Installing MySQL Server"
     sleep 2
-    sudo apt install mysql-server -y 
+    sudo apt install mysql-server -y
     echo -e  "${BLUE} ${BLUE}MySQL server has been installed!"
     
 fi

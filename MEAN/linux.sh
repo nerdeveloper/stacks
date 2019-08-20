@@ -55,10 +55,10 @@ else
     echo -e " ${BLUE} Installing MongoDB "
     sleep 2
     wget -qO - https://www.mongodb.org/static/pgp/server-${MONGODB_VERSION}.asc | sudo apt-key add - && \
-    . /etc/os-release &&  echo "$UBUNTU_CODENAME"
+    . /etc/os-release && \
     echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu $UBUNTU_CODENAME/mongodb-org/${MONGODB_VERSION} multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-${MONGODB_VERSION}.list && \
     sudo apt-get update && \
-    sudo apt-get install -y mongodb-org
+    sudo apt-get install -y mongodb-org && \
     sudo service mongod start
     echo -e  " ${BLUE} MongoDB has been installed! \e[0m "
     

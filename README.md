@@ -19,6 +19,12 @@ cd stacks
 bash setup.sh
 ```
 
+## CLI(Screenshot)
+
+  <img src="https://github.com/nerdeveloper/stacks/blob/master/screens/shot.png" alt="Lighthouse perf" title="Light house PWA test" width="500" >
+
+
+
 ### Make me feel :heart: and appreciated
 
 You can :star: the repo | Tell your friends about it | Fork it and submit Pull Request.

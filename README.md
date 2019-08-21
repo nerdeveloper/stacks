@@ -6,18 +6,17 @@
 
 Setting up a Local dev for your stack can be hard. You have to follow a lot of Blogs and do a lot of copying and pasting.  
 
-## Installation
+## Installation and Usage
 
 ```bash
 git clone https://github.com/nerdeveloper/stacks.git
 cd stacks
+./setup.sh
 ```
 
-## Usage
-
-```bash
-bash setup.sh
-```
+## Instuction for Mac users
+In order to install the stacks on here that are Mac compatible, you'll need to already have a working `homebrew` installation.
+You can find [instructions on how to install `homebrew` here](https://www.howtogeek.com/211541/homebrew-for-os-x-easily-installs-desktop-apps-and-terminal-utilities/)
 
 ## CLI(Screenshot)
 

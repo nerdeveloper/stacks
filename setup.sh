@@ -17,7 +17,7 @@ checkOS () {
         *)          machine="UNKNOWN:${unameOut}"
     esac
 }
-PS3='Please enter your choice: '
+PS3='Please enter your choice or enter "11" to quit: '
 options=("LAMP"  "LEMP" "MAMP"  "MEAN"  "MEMP" "MERN" "MEVN" "PEAN" "PERN" "DOCKER" "Quit")
 select opt in "${options[@]}"
 do

@@ -21,9 +21,7 @@ bash setup.sh
 
 ## CLI(Screenshot)
 
-  <img src="https://github.com/nerdeveloper/stacks/blob/master/screens/shot.png" alt="Lighthouse perf" title="Light house PWA test" width="500" >
-
-
+  <img src="https://github.com/nerdeveloper/stacks/blob/master/screens/shot.png" alt="Lighthouse perf" title="Screenshot of Stacks" width="500" >
 
 ### Make me feel :heart: and appreciated
 

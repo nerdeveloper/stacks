@@ -18,7 +18,7 @@ checkOS () {
     esac
 }
 PS3='Please enter your choice or enter "11" to quit: '
-options=("LAMP"  "LEMP" "MAMP"  "MEAN"  "MNMP" "MERN" "MEVN" "PEAN" "PERN" "DOCKER" "Quit")
+options=("LAMP"  "LNMP" "MAMP"  "MEAN"  "MNMP" "MERN" "MEVN" "PEAN" "PERN" "DOCKER" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -28,7 +28,7 @@ do
             echo "Please wait while we install $opt"
             bash $opt/install.sh
         ;;
-        "LEMP")
+        "LNMP")
             echo "you chose choice $REPLY which is $opt"
             sleep 1
             echo "Please wait while we install $opt"

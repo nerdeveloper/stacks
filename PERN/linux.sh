@@ -55,7 +55,7 @@ then
 else
     echo -e " ${BLUE} Installing Postgresql Database"
     sleep 2
-    sudo apt-get install postgresql postgresql-contrib
+    sudo apt-get install postgresql postgresql-contrib -y
     echo -e  " ${BLUE} PostgresqlDB has been installed! \e[0m"
     
 fi

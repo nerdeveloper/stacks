@@ -10,7 +10,7 @@ MONGODB_VERSION='4.0'
 
 
 
-echo "***** Installing MongoDB, Angular and NodeJS ********"
+echo "***** Installing MongoDB, Express-Generator, Angular and NodeJS ********"
 sleep 2
 
 echo "***** Updating services ****"

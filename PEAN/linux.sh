@@ -9,7 +9,7 @@ NODEJS_VERSION='10.x'
 
 
 
-echo "***** Installing PostgresqlDB, Angular and NodeJS ********"
+echo "***** Installing PostgresqlDB, Express-Generator, Angular and NodeJS ********"
 sleep 2
 
 echo "***** Updating services ****"

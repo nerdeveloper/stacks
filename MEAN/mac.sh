@@ -12,7 +12,7 @@ MONGODB_VERSION='3.6'
 
 
 
-echo "***** Installing MongoDB, Angular and NodeJS ********"
+echo "***** Installing MongoDB, Express-Generator, Angular and NodeJS ********"
 sleep 2
 
 

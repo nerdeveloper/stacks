@@ -39,7 +39,6 @@ runDocker() {
 
 echo  "Checking for any Docker Previous Installation "
 sleep 2
-break;
 sleep 2
 if [ -x "$(command -v docker)" ]; then
     read -p "Oops! You have Docker previous installed. Do you want to remove it? (y/n)?" -r choice

@@ -122,7 +122,7 @@ do
         "DOCKER")
             echo "You chose choice $REPLY which is $opt"
             sleep 1
-            echo "Please wait while we install $opt"
+            echo "Please wait while we install $opt..."
             sleep 1
             checkOS
             if [ "$machine" == "Mac" ]; then

@@ -36,6 +36,7 @@ runDocker() {
     echo " ${BLUE} Docker has been installed!"
     
 }
+
 echo  "Checking for any Docker Previous Installation "
 sleep 2
 if [ -x "$(command -v docker)" ]; then

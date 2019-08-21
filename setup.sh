@@ -134,7 +134,7 @@ do
                 echo -e " ${RED} Stacks has no support for your Operating System."
             fi
         ;;
-
+        
         "Quit")
             break
         ;;

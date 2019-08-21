@@ -18,7 +18,7 @@ checkOS () {
     esac
 }
 PS3='Please enter your choice or enter "11" to quit: '
-options=("LAMP"  "LEMP" "MAMP"  "MEAN"  "MEMP" "MERN" "MEVN" "PEAN" "PERN" "DOCKER" "Quit")
+options=("LAMP"  "LEMP" "MAMP"  "MEAN"  "MNMP" "MERN" "MEVN" "PEAN" "PERN" "DOCKER" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in

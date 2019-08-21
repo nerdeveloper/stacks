@@ -56,7 +56,7 @@ do
                 echo "Stacks has no support for your Operating System."
             fi
         ;;
-        "MEMP")
+        "MNMP")
             echo "you chose choice $REPLY which is $opt"
             sleep 1
             echo "Please wait while we install $opt"

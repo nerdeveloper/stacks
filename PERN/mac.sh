@@ -12,7 +12,7 @@ MONGODB_VERSION='3.6'
 
 
 
-echo "***** Installing MongoDB, Nextjs and NodeJS ********"
+echo "***** Installing PostgresqlDB, Nextjs and NodeJS ********"
 sleep 2
 
 

@@ -11,7 +11,7 @@ NODEJS_VERSION='10'
 
 
 
-echo "***** Installing MongoDB, Angular and NodeJS ********"
+echo "***** Installing PostgresqlDB, Angular and NodeJS ********"
 sleep 2
 
 

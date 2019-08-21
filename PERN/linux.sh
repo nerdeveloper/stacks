@@ -9,7 +9,7 @@ NODEJS_VERSION='10.x'
 
 
 
-echo "***** Installing MongoDB, Nextjs and NodeJS ********"
+echo "***** Installing PostgresqlDB, Nextjs and NodeJS ********"
 sleep 2
 
 echo "***** Updating services ****"

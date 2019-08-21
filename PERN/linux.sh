@@ -49,14 +49,13 @@ fi
 
 echo  "Checking for Postgresql Database"
 sleep 2
-if [ $(find /usr/local/bin -name postgresql) ]
+if [ $(find /etc/init.d -name postgresql) ]
 then
     echo -e " ${RED} You have PostgresqlDB installed! \e[0m"
 else
     echo -e " ${BLUE} Installing Postgresql Database"
     sleep 2
-    brew tap homebrew/services && \
-    brew install postgresql
+    sudo apt install postgresql postgresql-contrib
     echo -e  " ${BLUE} PostgresqlDB has been installed! \e[0m"
     
 fi

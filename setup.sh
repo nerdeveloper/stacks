@@ -120,6 +120,7 @@ do
             fi
         ;;
         "DOCKER")
+            break;;
             echo "You chose choice $REPLY which is $opt"
             sleep 1
             echo "Please wait while we install $opt..."

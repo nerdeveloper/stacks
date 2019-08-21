@@ -7,11 +7,12 @@ PURPLE='\033[0;35m'
 
 #version
 NODEJS_VERSION='10'
+MONGODB_VERSION='3.6'
 
 
 
 
-echo "***** Installing MongoDB, Angular and NodeJS ********"
+echo "***** Installing MongoDB, Nextjs and NodeJS ********"
 sleep 2
 
 
@@ -25,36 +26,21 @@ else
     echo -e " ${BLUE} Installing Nodejs and npm "
     sleep 2
     brew install node@${NODEJS_VERSION}
+    echo -e  " ${BLUE} Nodejs and npm has been installed!"
     
 fi
 
-echo  "Checking for Express Generator"
+echo  "Checking for Create-Next-app(React)"
 sleep 2
 
-if [ -x "$(command -v express-generator)" ];
+if [ -x "$(command -v create-next-app)" ];
 then
-    echo -e  " ${RED} You have express-generator installed!"
+    echo -e  " ${RED} You have Create-Next-app(React) installed! "
 else
-    echo -e " ${BLUE} Installing express-generator"
+    echo -e " ${BLUE} Installing Create-Next-app(React)"
     sleep 2
-    npm install -g express-generator
-    echo -e  " ${BLUE} Express-generator has been installed!"
-    
-fi
-
-
-
-echo  "Checking for Angular"
-sleep 2
-
-if [ -x "$(command -v ng)" ];
-then
-    echo -e  " ${RED} You have Angular installed!"
-else
-    echo -e " ${BLUE} Installing Angular"
-    sleep 2
-    npm install -g @angular/cli
-    echo -e  " ${BLUE} Angular has been installed!"
+    npm install -g create-next-app
+    echo -e  " ${BLUE} Create-Next-app(React) has been installed!"
     
 fi
 

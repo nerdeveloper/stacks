@@ -36,6 +36,7 @@ fi
 
 echo  "Checking for Create-Next-app(React)"
 sleep 2
+
 if [ -x "$(command -v create-next-app)" ];
 then
     echo -e  " ${RED} You have Create-Next-app(React) installed! \e[0m"
@@ -43,7 +44,7 @@ else
     echo -e " ${BLUE} Installing Create-Next-app(React)"
     sleep 2
     sudo npm install -g create-next-app
-    echo -e  " ${BLUE} Angular has been installed! \e[0m"
+    echo -e  " ${BLUE} Create-Next-app(React) has been installed! \e[0m"
     
 fi
 

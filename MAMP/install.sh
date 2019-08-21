@@ -6,7 +6,7 @@ PURPLE='\033[0;35m'
 
 
 
-echo "***** Installing Apache, MySQL and PHP for Debiana and Ubuntu OS ********"
+echo "***** Installing Apache, MySQL and PHP for Mac OSX ********"
 sleep 2
 
 echo -e  "Checking for Apache Server"

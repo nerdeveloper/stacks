@@ -5,6 +5,9 @@
   "main": "setup.sh",
   "keywords": [],
   "author": "Obinna Odirionye",
+  "scripts": {
+    "release": "release-it --no-npm.publish"
+  },
   "license": "MIT",
   "devDependencies": {
     "cz-conventional-changelog": "^3.0.2"

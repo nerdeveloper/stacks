@@ -41,7 +41,7 @@ echo  "Checking for any Docker Previous Installation "
 sleep 2
 sleep 2
 if [ -x "$(command -v docker)" ]; then
-    read -p "Oops! You have Docker previous installed. Do you want to remove it? (y/n)?" -r choice
+    read -p "Oops! You have Docker previously installed. Do you want to remove it? (y/n)?" -r choice
     case "$choice" in
         y|Y ) echo "YES";;
         n|N ) echo "NO";;

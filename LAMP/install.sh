@@ -48,7 +48,7 @@ then
 else
     echo -e " ${BLUE} Installing PHP"
     sleep 2
-    sudo apt install php libapache2-mod-php php-mysql -y 
+    sudo apt install php libapache2-mod-php php-mysql -y
     echo -e  " ${BLUE} PHP has been installed! \e[0m "
     
 fi

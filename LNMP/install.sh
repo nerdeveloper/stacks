@@ -6,7 +6,7 @@ PURPLE='\033[0;35m'
 
 
 
-echo "***** Installing Apache, MySQL and PHP for Debian and Ubuntu OS ********"
+echo "***** Installing Nginx, MySQL and PHP for Debian and Ubuntu OS ********"
 sleep 2
 
 echo "***** Updating services ****"

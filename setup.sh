@@ -4,7 +4,10 @@ RED='\033[0;31m'
 BLUE='\033[40;38;5;82m'
 PURPLE='\033[0;35m'
 
-echo 'Stacks' | figlet
+
+echo "+-+-+-+-+-+-+
+|S|t|a|c|k|s|
++-+-+-+-+-+-+"
 
 checkOS () {
     unameOut="$(uname -s)"

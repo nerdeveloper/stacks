@@ -4,8 +4,7 @@
 RED='\033[0;31m'
 BLUE='\033[40;38;5;82m'
 PURPLE='\033[0;35m'
-#version
-NODEJS_VERSION='10.x'
+source ./installers/linux.sh
 
 
 
@@ -23,13 +22,7 @@ if [ -x "$(command -v node)" ];
 then
     echo -e " ${RED} You have NodeJS installed! \e[0m"
 else
-    echo -e " ${BLUE} Installing Nodejs and npm "
-    sleep 2
-    curl -sL https://deb.nodesource.com/setup_${NODEJS_VERSION} -o nodesource_setup.sh && \
-    sudo ./nodesource_setup.sh && \
-    sudo apt-get install nodejs -y
-    echo -e  " ${BLUE} Nodejs and npm has been installed! \e[0m"
-    
+    install_nodejs
 fi
 
 echo  "Checking for Express Generator"

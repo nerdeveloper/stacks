@@ -26,21 +26,21 @@ do
             echo "you chose choice $REPLY which is $opt"
             sleep 1
             echo "Please wait while we install $opt"
-            bash $opt/install.sh
+            ./$opt/install.sh
         ;;
         "LNMP")
             echo "you chose choice $REPLY which is $opt"
             sleep 1
             echo "Please wait while we install $opt"
             sleep 1
-            bash $opt/install.sh
+            ./$opt/install.sh
         ;;
         "MAMP")
             echo "you chose choice $REPLY which is $opt"
             sleep 1
             echo "Please wait while we install $opt"
             sleep 1
-            bash $opt/install.sh
+            ./$opt/install.sh
         ;;
         "MEAN")
             echo "you chose choice $REPLY which is $opt"
@@ -49,9 +49,9 @@ do
             sleep 1
             checkOS
             if [ "$machine" == "Mac" ]; then
-                bash $opt/mac.sh
+                ./$opt/mac.sh
                 elif [ "$machine" == "Linux" ]; then
-                bash $opt/linux.sh
+                ./$opt/linux.sh
             else
                 echo "Stacks has no support for your Operating System."
             fi
@@ -61,7 +61,7 @@ do
             sleep 1
             echo "Please wait while we install $opt"
             sleep 1
-            bash $opt/install.sh
+            ./$opt/install.sh
         ;;
         "MERN")
             echo "you chose choice $REPLY which is $opt"
@@ -70,9 +70,9 @@ do
             sleep 1
             checkOS
             if [ "$machine" == "Mac" ]; then
-                bash $opt/mac.sh
+                ./$opt/mac.sh
                 elif [ "$machine" == "Linux" ]; then
-                bash $opt/linux.sh
+                ./$opt/linux.sh
             else
                 echo "Stacks has no support for your Operating System."
             fi
@@ -84,9 +84,9 @@ do
             sleep 1
             checkOS
             if [ "$machine" == "Mac" ]; then
-                bash $opt/mac.sh
+                ./$opt/mac.sh
                 elif [ "$machine" == "Linux" ]; then
-                bash $opt/linux.sh
+                ./$opt/linux.sh
             else
                 echo "Stacks has no support for your Operating System."
             fi
@@ -98,9 +98,9 @@ do
             sleep 1
             checkOS
             if [ "$machine" == "Mac" ]; then
-                bash $opt/mac.sh
+                ./$opt/mac.sh
                 elif [ "$machine" == "Linux" ]; then
-                bash $opt/linux.sh
+                ./$opt/linux.sh
             else
                 echo "Stacks has no support for your Operating System."
             fi
@@ -112,9 +112,9 @@ do
             sleep 1
             checkOS
             if [ "$machine" == "Mac" ]; then
-                bash $opt/mac.sh
+                ./$opt/mac.sh
                 elif [ "$machine" == "Linux" ]; then
-                bash $opt/linux.sh
+                ./$opt/linux.sh
             else
                 echo "Stacks has no support for your Operating System."
             fi
@@ -129,7 +129,7 @@ do
                 echo -e " ${RED}Stacks has no support for your Mac OSX Operating System."
                 
                 elif [ "$machine" == "Linux" ]; then
-                bash $opt/install.sh
+                ./$opt/install.sh
             else
                 echo -e " ${RED} Stacks has no support for your Operating System."
             fi

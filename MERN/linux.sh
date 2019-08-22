@@ -27,7 +27,7 @@ else
     echo -e " ${BLUE} Installing Nodejs and npm "
     sleep 2
     curl -sL https://deb.nodesource.com/setup_${NODEJS_VERSION} -o nodesource_setup.sh && \
-    sudo bash nodesource_setup.sh && \
+    sudo ./nodesource_setup.sh && \
     sudo apt-get install nodejs -y
     echo -e  " ${BLUE} Nodejs and npm has been installed! \e[0m"
     

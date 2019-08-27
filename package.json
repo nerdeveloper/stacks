@@ -1,6 +1,6 @@
 {
   "name": "stack",
-  "version": "1.2.2",
+  "version": "1.3.0",
   "description": "This is a simple interactive CLI tools for setting up your stack quickly for Local development, on-prem and Bare metal servers",
   "main": "setup.sh",
   "keywords": [],

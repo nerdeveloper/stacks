@@ -39,7 +39,7 @@ then
 else
     echo -e " ${BLUE} Installing Create-Nuxt-app(Vue)"
     sleep 2
-    npm install -g create-next-app
+    npm install -g create-nuxt-app
     echo -e  " ${BLUE} Create-Nuxt-app(Vue) has been installed!"
     
 fi

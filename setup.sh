@@ -17,6 +17,12 @@ checkOS () {
         *)          machine="UNKNOWN:${unameOut}"
     esac
 }
+
+checkHomebrew () {
+  source ./installers/mac.sh
+  install_homebrew
+}
+
 PS3='Please enter your choice or enter "11" to quit: '
 options=("LAMP"  "LNMP" "MAMP"  "MEAN"  "MNMP" "MERN" "MEVN" "PEAN" "PERN" "DOCKER" "Quit")
 select opt in "${options[@]}"
@@ -49,6 +55,7 @@ do
             sleep 1
             checkOS
             if [ "$machine" == "Mac" ]; then
+                checkHomebrew
                 ./$opt/mac.sh
                 elif [ "$machine" == "Linux" ]; then
                 ./$opt/linux.sh
@@ -70,6 +77,7 @@ do
             sleep 1
             checkOS
             if [ "$machine" == "Mac" ]; then
+                checkHomebrew
                 ./$opt/mac.sh
                 elif [ "$machine" == "Linux" ]; then
                 ./$opt/linux.sh
@@ -84,6 +92,7 @@ do
             sleep 1
             checkOS
             if [ "$machine" == "Mac" ]; then
+                checkHomebrew
                 ./$opt/mac.sh
                 elif [ "$machine" == "Linux" ]; then
                 ./$opt/linux.sh
@@ -98,6 +107,7 @@ do
             sleep 1
             checkOS
             if [ "$machine" == "Mac" ]; then
+                checkHomebrew
                 ./$opt/mac.sh
                 elif [ "$machine" == "Linux" ]; then
                 ./$opt/linux.sh
@@ -112,6 +122,7 @@ do
             sleep 1
             checkOS
             if [ "$machine" == "Mac" ]; then
+                checkHomebrew
                 ./$opt/mac.sh
                 elif [ "$machine" == "Linux" ]; then
                 ./$opt/linux.sh

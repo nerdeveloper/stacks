@@ -16,8 +16,7 @@ bash setup.sh
 
 ## Instruction for Mac users
 
-In order to install the stacks on here that are Mac compatible, you'll need to already have a working `homebrew` installation.
-You can find [instructions on how to install `homebrew` here](https://www.howtogeek.com/211541/homebrew-for-os-x-easily-installs-desktop-apps-and-terminal-utilities/)
+In order to install the stacks on here that are Mac compatible, you'll need to already have a working `homebrew` installation. If you do not have, Stacks will install `homebrew` for you.
 
 ## CLI(Screenshot)
 

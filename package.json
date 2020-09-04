@@ -10,7 +10,8 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "cz-conventional-changelog": "^3.0.2"
+    "cz-conventional-changelog": "^3.0.2",
+    "release-it": "^14.0.1"
   },
   "config": {
     "commitizen": {

@@ -14,7 +14,7 @@ function install_nodejs {
     curl -sL https://deb.nodesource.com/setup_${NODEJS_VERSION} -o nodesource_setup.sh && \
     sudo chmod +x nodesource_setup.sh && sudo ./nodesource_setup.sh && \
     sudo apt-get install nodejs -y
-    echo -e  " ${BLUE} Nodejs and npm has been installed! \e[0m"
+    echo -e  " ${BLUE} Nodejs and npm has been installed! \033[0m"
 }
 
 function install_mongodb {
@@ -26,5 +26,5 @@ function install_mongodb {
     sudo apt-get update && \
     sudo apt-get install -y mongodb-org && \
     sudo service mongod start
-    echo -e  " ${BLUE} MongoDB has been installed! \e[0m "
+    echo -e  " ${BLUE} MongoDB has been installed! \033[0m "
 }

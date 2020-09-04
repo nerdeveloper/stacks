@@ -66,7 +66,7 @@ else
 fi
 
 echo Done
-echo -e " ${BLUE} Tweet me @_nerdeveloper \e[0m"
+echo -e " ${BLUE} Tweet me @odirionyeo \033[0m"
 
 
 

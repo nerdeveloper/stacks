@@ -19,7 +19,7 @@ echo -e  "Checking for Nodejs"
 sleep 2
 if [ -x "$(command -v node)" ];
 then
-    echo -e " ${RED} You have NodeJS installed! \e[0m"
+    echo -e " ${RED} You have NodeJS installed! \033[0m"
 else
     install_nodejs
 fi
@@ -30,12 +30,12 @@ sleep 2
 
 if [ -x "$(command -v create-next-app)" ];
 then
-    echo -e  " ${RED} You have Create-Next-app(React) installed! \e[0m"
+    echo -e  " ${RED} You have Create-Next-app(React) installed! \033[0m"
 else
     echo -e " ${BLUE} Installing Create-Next-app(React)"
     sleep 2
     sudo npm install -g create-next-app
-    echo -e  " ${BLUE} Create-Next-app(React) has been installed! \e[0m"
+    echo -e  " ${BLUE} Create-Next-app(React) has been installed! \033[0m"
     
 fi
 
@@ -43,17 +43,17 @@ echo  "Checking for Postgresql Database"
 sleep 2
 if [ $(find /etc/init.d -name postgresql) ]
 then
-    echo -e " ${RED} You have PostgresqlDB installed! \e[0m"
+    echo -e " ${RED} You have PostgresqlDB installed! \033[0m"
 else
     echo -e " ${BLUE} Installing Postgresql Database"
     sleep 2
     sudo apt-get install postgresql postgresql-contrib -y
-    echo -e  " ${BLUE} PostgresqlDB has been installed! \e[0m"
+    echo -e  " ${BLUE} PostgresqlDB has been installed! \033[0m"
     
 fi
 
 echo Done
-echo -e " ${BLUE} Tweet me @_nerdeveloper \e[0m"
+echo -e " ${BLUE} Tweet me @odirionyeo \033[0m"
 
 
 

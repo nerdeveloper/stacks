@@ -60,7 +60,7 @@ else
 fi
 
 echo Done
-echo -e " ${BLUE} Tweet me @_nerdeveloper"
+echo -e " ${BLUE} Tweet me @odirionyeo"
 
 
 

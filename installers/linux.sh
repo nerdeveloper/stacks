@@ -37,3 +37,19 @@ function install_ruby {
     sudo apt-get install ruby-full
     echo -e " ${BLUE} Ruby has been installed! \033[0m "
 }
+
+function install_go {
+    echo -e "${BLUE} Installing Go"
+    sleep 2 
+    wget  https://dl.google.com/go/go1.15.2.linux-amd64.tar.gz
+    sudo tar -C /usr/local -xzf go1.13.linux-amd64.tar.gz
+    echo "What do you want to call your go workspace?"
+    read goworkspace
+    mkdir -p ~/"$goworkspace"/{bin,src,pkg}
+    echo "You selected $goworkspace as your workspace for go."
+    echo 'export PATH="$PATH:/usr/local/go/bin"' >> ~/.profile
+    echo "export GOPATH=~/$goworkspace" >> ~/.profile
+    echo 'export GOBIN=$GOPATH/bin' >> ~/.profile
+    source ~/.profile
+    echo -e " ${BLUE} Go has been installed! \033[0m "
+}

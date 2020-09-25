@@ -23,8 +23,8 @@ checkHomebrew () {
   install_homebrew
 }
 
-PS3='Please enter your choice or enter "11" to quit: '
-options=("LAMP"  "LNMP" "MAMP"  "MEAN"  "MNMP" "MERN" "MEVN" "PEAN" "PERN" "DOCKER" "Quit")
+PS3='Please enter your choice or enter "13" to quit: '
+options=("LAMP"  "LNMP" "MAMP"  "MEAN"  "MNMP" "MERN" "MEVN" "PEAN" "PERN" "DOCKER" "RUBY" "GO" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -130,6 +130,8 @@ do
                 echo "Stacks has no support for your Operating System."
             fi
         ;;
+
+        
         "DOCKER")
             echo "You chose choice $REPLY which is $opt"
             sleep 1
@@ -144,6 +146,42 @@ do
             else
                 echo -e " ${RED} Stacks has no support for your Operating System."
             fi
+        ;;
+
+        "RUBY")
+            echo "you chose choice $REPLY which is $opt"
+            sleep 1
+            echo -e "${PURPLE} Please wait while we install $opt"
+            sleep 1
+            checkOS 
+            if ["$machine" == "Mac"]; then
+                checkHomebrew 
+                ./$opt/mac.sh
+                elif [ "$machine" == "Linux" ]; then 
+                ./$opt/linux.sh
+            else 
+                echo -e "${RED} Stacks has no support for your Mac OSX Operating System."
+
+        fi
+
+        ;;
+
+        "GO")
+            echo "you chose choice $REPLY which is $opt"
+            sleep 1
+            echo -e "${PURPLE} Please wait while we install $opt"
+            sleep 1
+            checkOS 
+            if ["$machine" == "Mac"]; then
+                checkHomebrew 
+                ./$opt/mac.sh
+                elif [ "$machine" == "Linux" ]; then 
+                ./$opt/linux.sh
+            else 
+                echo -e "${RED} Stacks has no support for your Mac OSX Operating System."
+
+        fi
+
         ;;
         
         "Quit")

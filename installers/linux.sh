@@ -28,3 +28,12 @@ function install_mongodb {
     sudo service mongod start
     echo -e  " ${BLUE} MongoDB has been installed! \033[0m "
 }
+
+function install_ruby {
+
+    echo -e " ${BLUE} Installing Ruby"
+    sleep 2 
+    sudo apt-get update && \
+    sudo apt-get install ruby-full
+    echo -e " ${BLUE} Ruby has been installed! \033[0m "
+}
